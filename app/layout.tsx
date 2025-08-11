@@ -33,15 +33,26 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={fontSans.variable}>{children}
-      <!-- Start of Waypoint Converts Navigator Config Code -->
-<script>
-    window.acNavigatorConfig = {
-        id: '57f32fb1-acc3-4c3d-80f1-f502d13bd357',
-        host: 'https://local.waypointconverts.com:8081'
-    }
-</script>
-<script>(function(){var c=window.acNavigatorConfig;var d=document;var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src=c.host+'/navigator/launcher/js/'+c.id;(d.body||d.head).appendChild(s)})()</script>
+      <body className={fontSans.variable}>
+        {children}
+        {/* Start of Waypoint Converts Navigator Config Code */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.acNavigatorConfig = {
+                  id: '57f32fb1-acc3-4c3d-80f1-f502d13bd357',
+                  host: 'https://local.waypointconverts.com:8081'
+              }
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){var c=window.acNavigatorConfig;var d=document;var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src=c.host+'/navigator/launcher/js/'+c.id;(d.body||d.head).appendChild(s)})()
+            `,
+          }}
+        />
       </body>
     </html>
   );
