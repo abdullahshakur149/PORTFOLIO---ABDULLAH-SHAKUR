@@ -15,7 +15,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
+    title: "AI Full Stack Engineer",
     icon: "/web.webp",
   },
   {
@@ -93,63 +93,64 @@ const technologies = [
 
 const experiences = [
   {
+    title: "AI Full Stack Engineer",
+    company_name: "Product Box",
+    icon: "/company/sparkbright.webp",
+    iconBg: "#3B82F6",
+    date: "Jul 2025 - Present",
+    points: [
+      "Implemented AI-driven interaction workflows that improved user retention and engagement throughout the platform's free trial lifecycle.",
+      "Engineered an upgraded AI chat agent system to enhance conversational capabilities and improve user engagement across the platform.",
+      "Engineered a real-time analytics dashboard for a US-based client using ClickHouse and GA4 APIs, visualizing 2+ years of historical data to provide actionable insights, increasing trial-to-paid conversions by 18%.",
+      "Implemented AI-driven automation, including a time-critical email system and upgraded AI chat agent, improving user engagement and retention across the platform's free trial period.",
+      "Resolved critical full-stack bugs and developed scalable backend APIs to enhance system stability, ensuring seamless performance under concurrent user load and reducing downtime incidents.",
+      "Designed and developed a mobile application featuring an AI-powered legal chatbot that provides jurisdiction-aware legal guidance based on the user's location.",
+      "Implemented natural language processing workflows to interpret user queries and deliver structured responses related to legal topics such as employment law, consumer rights, and contracts.",
+    ],
+  },
+  {
     title: "Software Engineer",
     company_name: "Enchant",
     icon: "/company/sparkbright.webp",
     iconBg: "#3B82F6",
-    date: "Mar 2024 - Present",
+    date: "Mar 2024 - Jul 2025",
     points: [
-      "Integrated UFH10E RFID Reader with ESP32 (Wi-Fi enabled) to build an automated vehicle checkpoint system for a truck yard, logging vehicle data to a central database for fuel monitoring and theft detection",
-      "Integrated TikTok Marketing APIs for ad management in an e-commerce platform, enabling automated control over campaign creation, ad group management, creative uploads, and real-time performance tracking",
-      "Developed a university matching platform for YB Consultants Peshawar to assist students in finding suitable international universities with personalized recommendations based on criteria",
-      "Students input key details like CGPA, education background, language preference, target country, and desired department with application submission and real-time tracking features",
-      "Focused on backend architecture, database design, and secure API development for the university matching system",
-      "Built a React Native mobile app integrated with OpenAI models to answer user queries related to consumer laws and legal concerns",
-      "Users could ask natural-language questions and receive AI-generated legal guidance designed for accessibility and ease-of-use",
-      "Worked on both frontend and backend, ensuring smooth AI integration, real-time responses, and data security",
-      "Set up Linux-based EC2 server and configured NGINX as a manual load balancer to distribute traffic across multiple Node.js instances",
-      "Used AWS Lambda to trigger real-time alerts on server crashes",
+      "Integrated UFH10E RFID Readers with ESP32 for an automated vehicle checkpoint system, reducing fuel monitoring errors and theft incidents in a truck yard by 25%.",
+      "Architected a university matching platform for YB Consultants, providing personalized international university recommendations using CGPA, preferences, and AI-driven analytics, simplifying foreign admission processes for students.",
+      "Developed a React Native mobile app with OpenAI integration to deliver real-time natural-language legal guidance, improving accessibility for users unfamiliar with legal terminology while ensuring secure backend data handling.",
+      "Developed an AI-powered document processing platform capable of extracting structured data from PDFs, invoices, and contracts using LLMs and OCR pipelines.",
+      "Built a scalable backend service to process large document batches asynchronously, reducing manual data entry and improving processing efficiency.",
+      "Built an AI-based resume screening system that analyzes candidate profiles and ranks them based on job descriptions using semantic similarity models.",
+      "Developed a recruiter dashboard that displays candidate scores, skill matching insights, and automated recommendations.",
+      "Improved candidate shortlisting efficiency by enabling recruiters to quickly identify top applicants from large resume datasets.",
+      "Developed and custom-trained an image classification model for NSFW content detection, enabling automated moderation of user-generated media.",
+      "Curated and preprocessed training datasets, implementing data labeling, augmentation, and class balancing to improve model accuracy and reduce false positives.",
+      "Fine-tuned deep learning models using transfer learning techniques to classify explicit and safe content across multiple categories.",
+      "Integrated the trained model into a backend moderation pipeline, enabling real-time content filtering and automated safety enforcement for uploaded media.",
     ],
   },
   {
-    title: "Full Stack Engineer",
-    company_name: "Pixtrum",
+    title: "Fullstack Developer",
+    company_name: "Pixtrum Agency",
     icon: "/company/avm.webp",
     iconBg: "#2563EB",
     date: "Jun 2023 - Mar 2024",
     points: [
-      "Built and launched a SaaS-based Order Management platform designed to streamline the order lifecycle for businesses, featuring real-time updates, automated status tracking, and seamless courier integrations",
-      "Developed the full-stack system using Next.js, Tailwind CSS, Node.js, and MongoDB with secure authentication and role-based access control using NextAuth",
-      "Designed a responsive and intuitive UI for a smooth experience across all devices",
-      "Integrated with multiple courier APIs to automate order tracking and delivery notifications",
-      "Set up an hourly cron job to sync order statuses with third-party APIs",
-      "Used AWS Lambda to trigger real-time alerts on server crashes",
-      "Wrote automated end-to-end tests with Puppeteer and Selenium to ensure platform stability",
-      "Developed a comprehensive employee management module for handling roles, permissions, and activity logs",
-      "Used Postman for API testing, monitoring, and performance validation",
-      "Containerized the application using Docker for consistent development, deployment, and scalability across environments",
+      "Launched a SaaS-based Order Management platform with real-time updates, automated status tracking, and courier API integration, streamlining order operations and reducing manual effort by 40%.",
+      "Built a full-stack architecture with Docker containerization, automated testing using Puppeteer and Selenium, and CI/CD pipelines, improving deployment consistency and system reliability across environments.",
+      "Created a comprehensive employee management module and responsive UI using Next.js and Tailwind, enhancing role-based access control, administrative oversight, and user experience across desktop and mobile platforms.",
     ],
   },
   {
-    title: "Web Engineer",
+    title: "Web Engineer / Backend Developer",
     company_name: "Veevo Tech",
     icon: "/company/wtw.jpg",
     iconBg: "#1D4ED8",
     date: "Jun 2022 - May 2023",
     points: [
-      "Underwent training in Business Development and Software Development processes at Veevo Tech",
-      "Contributed to full-stack development using Node.js, Express.js, EJS, and Bootstrap",
-      "Collaborated on major in-house products like Empleado (HR Management System) and Query Q",
-      "Developed a School Management System with dedicated portals for Teachers, Students, and Admins using EJS templating, Express.js for backend logic, and Bootstrap/CSS for UI",
-      "Focused on scalability with efficient use of load balancers for high-traffic handling",
-      "Implemented Stripe for handling secure online payments and subscriptions",
-      "Worked with cron jobs and AWS Lambda to schedule and send automated marketing emails",
-      "Designed and built a Custom Apparel Builder supporting multiple product types (T-shirt, Hoodie, Sweatpants, etc.)",
-      "Guided users through 9-stage customization: Fit, Fabric, Color, Care Label, Neck Label, Print, Quantity, Packaging with real-time visual feedback",
-      "Built Lane View Driving School web app using Next.js and Express.js with online course booking, both manual and Stripe-integrated payments",
-      "Offered both Intensive and Hourly Driving Courses with Admin Portal for managing and tracking registrations",
-      "Deployed the application on DigitalOcean, with scheduled tasks using AWS Lambda for weekly emails",
-      "Developed a Spam Email Classifier using SVM with Gaussian Kernels tuned with cross-validation to minimize false positives in spam detection",
+      "Developed a multi-portal School Management System with real-time course booking and Stripe payment integration, improving administrative efficiency and student experience.",
+      "Constructed a Custom Apparel Builder with a 9-stage live customization workflow, delivering instant visual feedback and streamlining design-to-order processes for multiple product types.",
+      "Built and tuned a Spam Email Classifier using SVM with Gaussian kernels and cross-validation, reducing false positives and enabling automated email filtering for client communications.",
     ],
   },
 ];
@@ -210,9 +211,63 @@ const projects: {
   platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web";
 }[] = [
   {
+    name: "Roshna Haq - AI Legal Rights Guidance App",
+    description:
+      "Developed an AI-powered legal rights guidance application for Pakistan, designed to educate citizens on their basic rights in real time across all five provinces. The platform scrapes official government websites to provide accurate, region-specific legal information with emergency alert features and a verified lawyer directory. Successfully piloted with 200 users, demonstrating tangible social impact.",
+    tags: [
+      {
+        name: "ai",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nlp",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "web-scraping",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "/projectimg/sparkbright.png",
+    source_code_link: "https://github.com/abdullahshakur/roshna-haq",
+    platform: "Web",
+    deploy_link: "https://roshna-haq.vercel.app/",
+  },
+  {
+    name: "B'fest 2024 - Business Fest Web App",
+    description:
+      "Developed the B'fest 2024 Web App as IT Team Lead for Business Fest, implementing a full-stack solution with Next.js, Node.js, MongoDB, and Tailwind CSS, delivering a seamless event management platform with secure authentication and dynamic user interactions.",
+    tags: [
+      {
+        name: "next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: "/projectimg/mern.png",
+    source_code_link: "https://github.com/abdullahshakur/bfest-2024",
+    platform: "Vercel",
+    deploy_link: "https://bfest-2024.vercel.app/",
+  },
+  {
     name: "PARVENETTA - 2D Real Time Clothing Design App",
     description:
-      "Built a bespoke t-shirt and hoodie design platform with fit selection, fabric choices, and file-based custom requests. Implemented user auth (NextAuth), dynamic measurement profiles, and Stripe for secure checkout. Used MongoDB, Next.js, and Tailwind to deliver a seamless design-to-order experience.",
+      "Built a bespoke t-shirt and hoodie design platform with fit/fabric selection, custom file uploads, Stripe payment integration, and dynamic measurement profiles, enhancing the end-to-end design-to-order user experience.",
     tags: [
       {
         name: "next.js",
@@ -239,7 +294,7 @@ const projects: {
   {
     name: "ORTHORIC - Bacha Khan University of Dentistry",
     description:
-      "Developed a healthcare management platform for clinics, featuring secure user authentication, appointment scheduling, and patient detail management. Integrated role-based access for supervisors, TMOs, and receptionists. Utilized MongoDB for robust data storage and EJS with Bootstrap for responsive, user-friendly interfaces.",
+      "Developed a healthcare management platform for Orthoric Bacha Khan University of Dentistry using Node.js, Express, MongoDB, EJS, and Bootstrap, featuring secure authentication, appointment scheduling, patient data management, and role-based access for supervisors, TMOs, and receptionists.",
     tags: [
       {
         name: "node.js",
@@ -266,7 +321,7 @@ const projects: {
   {
     name: "ENCHANT - Courier Management System",
     description:
-      "Developed a courier management system with secure authentication, order tracking, and employee management. Implemented role-based access for admins and couriers, plus real-time notifications and automated order processing using CRON JOBS with third party APIs of Trax, Postex, Daewoo. Utilized MongoDB for scalable data storage and EJS with Bootstrap for responsive, user-friendly interfaces.",
+      "Developed a courier management system with secure authentication, real-time order tracking, role-based access for admins and couriers, automated CRON job-based order processing with third-party API integrations (Trax, Postex, Daewoo), and scalable data storage for streamlined operations.",
     tags: [
       {
         name: "node.js",
@@ -289,60 +344,6 @@ const projects: {
     source_code_link: "https://github.com/abdullahshakur/enchant-cms",
     platform: "Web",
     deploy_link: "https://enchant-cms.vercel.app/",
-  },
-  {
-    name: "University Matching Platform",
-    description:
-      "Developed a university matching platform for YB Consultants Peshawar to assist students in finding suitable international universities. Students input key details like CGPA, education background, language preference, target country, and desired department. The system provides personalized university recommendations based on criteria with application submission and real-time tracking features.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "ai-matching",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "/projectimg/hoobank.webp",
-    source_code_link: "https://github.com/abdullahshakur/university-matcher",
-    platform: "Vercel",
-    deploy_link: "https://university-matcher.vercel.app/",
-  },
-  {
-    name: "Legal AI Assistant - React Native App",
-    description:
-      "Built a React Native mobile app integrated with OpenAI models to answer user queries related to consumer laws and legal concerns. Users could ask natural-language questions and receive AI-generated legal guidance. Designed for accessibility and ease-of-use, providing instant information to users unfamiliar with legal jargon.",
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "openai",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ai",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "mobile",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: "/projectimg/metaverse.png",
-    source_code_link: "https://github.com/abdullahshakur/legal-ai-assistant",
-    platform: "Web",
-    deploy_link: "https://legal-ai-assistant.vercel.app/",
   },
   {
     name: "SaaS Order Management Platform",

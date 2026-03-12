@@ -54,15 +54,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
       >
-        Experienced Software Engineer with a strong foundation in full-stack
-        development and a passion for creating innovative solutions. Proven
-        expertise in Node.js, React.js, Next.js, and MongoDB, with hands-on
-        experience in building scalable applications, integrating third-party
-        APIs, and implementing secure authentication systems. Skilled in both
-        frontend and backend development, with a focus on creating user-friendly
-        interfaces and robust server-side architectures. Demonstrated ability to
-        work with cloud platforms like AWS, implement real-time features, and
-        deliver high-quality software solutions that drive business growth.
+        AI Full Stack Engineer with expertise in building intelligent,
+        production-grade applications powered by AI and machine learning.
+        Proficient in Python, JavaScript (Node.js, React, Next.js), SQL &amp; NoSQL
+        databases (MongoDB, ClickHouse), and AI/ML technologies including OpenAI
+        API, SVM, and Neural Networks. Experienced in engineering real-time
+        analytics dashboards, AI-driven chat agents, NLP workflows, and
+        document processing pipelines using LLMs and OCR. Skilled in cloud
+        platforms (AWS, DigitalOcean), Docker containerization, CI/CD pipelines,
+        API development (REST, GraphQL), data analytics &amp; visualization (GA4),
+        and cybersecurity best practices. Passionate about delivering scalable,
+        high-impact software solutions that drive business growth and social
+        impact.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-20">
         {services.map((service, index) => (

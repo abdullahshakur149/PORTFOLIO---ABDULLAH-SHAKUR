@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I&apos;m{" "}
             <span className="text-[#3B82F6] ">Abdullah Shakur</span>
           </h1>
-          <p className="heroSubText">A Software Engineer</p>
+          <p className="heroSubText">AI Full Stack Engineer</p>
         </div>
       </div>
       <div className="absolute xs:bottom-2 bottom-32 w-full flex justify-center items-center z-10">
