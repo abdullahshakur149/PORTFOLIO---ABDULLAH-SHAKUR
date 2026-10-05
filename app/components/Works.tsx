@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Tilt } from "react-tilt";
-import { projects } from "../constants";
+import { projects, automationProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "./HigherOrderComponents";
 
@@ -19,7 +19,8 @@ type ProjectCardProps = {
 	image: string;
 	source_code_link?: string;
 	deploy_link: string;
-	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
+	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web";
+	category?: string;
 };
 
 const ProjectCard = ({
@@ -30,7 +31,8 @@ const ProjectCard = ({
 	image,
 	source_code_link,
 	deploy_link,
-	platform
+	platform,
+	category
 }: ProjectCardProps) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -50,6 +52,14 @@ const ProjectCard = ({
 						alt="project_image"
 						className="w-full h-full object-cover rounded-2xl"
 					/>
+
+					{category && (
+						<div className="absolute top-3 left-3">
+							<span className="bg-black/70 text-white text-[12px] font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
+								{category}
+							</span>
+						</div>
+					)}
 
 					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
 						{source_code_link && <Link
@@ -125,6 +135,33 @@ const Works = () => {
 			<div className="mt-20 flex flex-wrap gap-7">
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} index={index} {...project} />
+				))}
+			</div>
+
+			<motion.div variants={textVariant()} className="mt-28">
+				<p className="sectionSubText">Automation & AI</p>
+				<h2 className="sectionHeadText">Agents & Workflows.</h2>
+			</motion.div>
+
+			<div className="w-full flex">
+				<motion.p
+					variants={fadeIn("", "", 0.1, 1)}
+					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+				>
+					A collection of automation workflows and AI agents I build with n8n,
+					Vapi, and custom LLM frameworks. These connect tools, handle voice
+					calls, and reason over data to take real work off people's plates —
+					from lead routing and reporting to voice booking and support triage.
+				</motion.p>
+			</div>
+
+			<div className="mt-20 flex flex-wrap gap-7">
+				{automationProjects.map((project, index) => (
+					<ProjectCard
+						key={`automation-${index}`}
+						index={index}
+						{...project}
+					/>
 				))}
 			</div>
 		</>

@@ -93,19 +93,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "AI Full Stack Engineer",
+    title: "Full Stack Engineer",
     company_name: "Product Box",
     icon: "/company/sparkbright.webp",
     iconBg: "#3B82F6",
     date: "Jul 2025 - Present",
     points: [
-      "Implemented AI-driven interaction workflows that improved user retention and engagement throughout the platform's free trial lifecycle.",
-      "Engineered an upgraded AI chat agent system to enhance conversational capabilities and improve user engagement across the platform.",
       "Engineered a real-time analytics dashboard for a US-based client using ClickHouse and GA4 APIs, visualizing 2+ years of historical data to provide actionable insights, increasing trial-to-paid conversions by 18%.",
-      "Implemented AI-driven automation, including a time-critical email system and upgraded AI chat agent, improving user engagement and retention across the platform's free trial period.",
+      "Implemented AI-driven automation, including a time-critical email system and an upgraded AI chat agent, improving user engagement and retention across the platform's free trial period.",
       "Resolved critical full-stack bugs and developed scalable backend APIs to enhance system stability, ensuring seamless performance under concurrent user load and reducing downtime incidents.",
-      "Designed and developed a mobile application featuring an AI-powered legal chatbot that provides jurisdiction-aware legal guidance based on the user's location.",
-      "Implemented natural language processing workflows to interpret user queries and deliver structured responses related to legal topics such as employment law, consumer rights, and contracts.",
     ],
   },
   {
@@ -118,15 +114,6 @@ const experiences = [
       "Integrated UFH10E RFID Readers with ESP32 for an automated vehicle checkpoint system, reducing fuel monitoring errors and theft incidents in a truck yard by 25%.",
       "Architected a university matching platform for YB Consultants, providing personalized international university recommendations using CGPA, preferences, and AI-driven analytics, simplifying foreign admission processes for students.",
       "Developed a React Native mobile app with OpenAI integration to deliver real-time natural-language legal guidance, improving accessibility for users unfamiliar with legal terminology while ensuring secure backend data handling.",
-      "Developed an AI-powered document processing platform capable of extracting structured data from PDFs, invoices, and contracts using LLMs and OCR pipelines.",
-      "Built a scalable backend service to process large document batches asynchronously, reducing manual data entry and improving processing efficiency.",
-      "Built an AI-based resume screening system that analyzes candidate profiles and ranks them based on job descriptions using semantic similarity models.",
-      "Developed a recruiter dashboard that displays candidate scores, skill matching insights, and automated recommendations.",
-      "Improved candidate shortlisting efficiency by enabling recruiters to quickly identify top applicants from large resume datasets.",
-      "Developed and custom-trained an image classification model for NSFW content detection, enabling automated moderation of user-generated media.",
-      "Curated and preprocessed training datasets, implementing data labeling, augmentation, and class balancing to improve model accuracy and reduce false positives.",
-      "Fine-tuned deep learning models using transfer learning techniques to classify explicit and safe content across multiple categories.",
-      "Integrated the trained model into a backend moderation pipeline, enabling real-time content filtering and automated safety enforcement for uploaded media.",
     ],
   },
   {
@@ -374,4 +361,138 @@ const projects: {
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const automationProjects: {
+  name: string;
+  category: "n8n" | "Vapi" | "Custom Agent";
+  description: string;
+  tags: {
+    name: string;
+    color: string;
+  }[];
+  image: string;
+  source_code_link?: string;
+  deploy_link: string;
+  platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web";
+}[] = [
+  {
+    name: "Lead Capture → CRM Sync",
+    category: "n8n",
+    description:
+      "An n8n workflow that receives new leads from a landing page via webhook, enriches them with company data, de-duplicates against existing records, then creates the contact in Airtable and posts an instant alert to a Slack sales channel — turning form submissions into actionable leads with zero manual entry.",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "webhook", color: "green-text-gradient" },
+      { name: "airtable", color: "orange-text-gradient" },
+      { name: "slack", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/issuetracker.png",
+    source_code_link: "https://github.com/abdullahshakur/n8n-lead-capture-sync",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/n8n-lead-capture-sync",
+  },
+  {
+    name: "Daily AI News Digest",
+    category: "n8n",
+    description:
+      "A scheduled n8n automation that pulls the day's top articles from multiple RSS feeds, summarizes each one with an OpenAI node, formats the highlights into a clean HTML layout, and emails a single digest every morning via Gmail — keeping the team current without the scroll.",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "openai", color: "green-text-gradient" },
+      { name: "rss", color: "orange-text-gradient" },
+      { name: "gmail", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/metaverse.png",
+    source_code_link: "https://github.com/abdullahshakur/n8n-ai-news-digest",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/n8n-ai-news-digest",
+  },
+  {
+    name: "Invoice-to-Sheet Automation",
+    category: "n8n",
+    description:
+      "An n8n workflow that watches a Gmail inbox for incoming invoices, extracts vendor, amount, and due date from PDF attachments, and appends each record to a Google Sheet while flagging anything over a set threshold for approval — replacing repetitive bookkeeping data entry.",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "gmail", color: "green-text-gradient" },
+      { name: "google-sheets", color: "orange-text-gradient" },
+      { name: "ocr", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/hoobank.webp",
+    source_code_link: "https://github.com/abdullahshakur/n8n-invoice-to-sheet",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/n8n-invoice-to-sheet",
+  },
+  {
+    name: "Restaurant Reservation Voice Agent",
+    category: "Vapi",
+    description:
+      "A Vapi voice assistant that answers inbound calls, checks table availability against a live calendar, books reservations, and confirms details by SMS. Natural-sounding conversation handles party size, timing, and special requests, freeing front-of-house staff from the phone during peak hours.",
+    tags: [
+      { name: "vapi", color: "blue-text-gradient" },
+      { name: "voice-ai", color: "green-text-gradient" },
+      { name: "twilio", color: "orange-text-gradient" },
+      { name: "calendar", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/sparkbright.png",
+    source_code_link: "https://github.com/abdullahshakur/vapi-reservation-agent",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/vapi-reservation-agent",
+  },
+  {
+    name: "AI Appointment Reminder Caller",
+    category: "Vapi",
+    description:
+      "A Vapi outbound calling agent that phones clients a day before their appointment, confirms or reschedules in natural language, and writes the outcome back to the booking system. Reduces no-shows by reaching people on a channel they actually answer, with every call logged automatically.",
+    tags: [
+      { name: "vapi", color: "blue-text-gradient" },
+      { name: "voice-ai", color: "green-text-gradient" },
+      { name: "outbound", color: "orange-text-gradient" },
+      { name: "scheduling", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/avm.webp",
+    source_code_link: "https://github.com/abdullahshakur/vapi-reminder-caller",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/vapi-reminder-caller",
+  },
+  {
+    name: "Customer Support Triage Agent",
+    category: "Custom Agent",
+    description:
+      "A custom LLM agent built with LangChain and the OpenAI API that reads incoming support tickets, classifies them by topic and urgency, drafts a suggested reply from a knowledge base, and routes escalations to the right team — cutting first-response time while keeping a human in the loop.",
+    tags: [
+      { name: "langchain", color: "blue-text-gradient" },
+      { name: "openai", color: "green-text-gradient" },
+      { name: "rag", color: "orange-text-gradient" },
+      { name: "python", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/mern.png",
+    source_code_link: "https://github.com/abdullahshakur/support-triage-agent",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/support-triage-agent",
+  },
+  {
+    name: "Research Assistant Agent",
+    category: "Custom Agent",
+    description:
+      "A tool-using AI agent that takes a research question, runs live web searches, reads and cross-checks the top sources, and returns a cited summary with key findings. Built on a function-calling loop with OpenAI, it turns open-ended questions into structured, source-backed briefs.",
+    tags: [
+      { name: "agents", color: "blue-text-gradient" },
+      { name: "openai", color: "green-text-gradient" },
+      { name: "web-search", color: "orange-text-gradient" },
+      { name: "python", color: "blue-text-gradient" },
+    ],
+    image: "/projectimg/avm.webp",
+    source_code_link: "https://github.com/abdullahshakur/research-assistant-agent",
+    platform: "Web",
+    deploy_link: "https://github.com/abdullahshakur/research-assistant-agent",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  automationProjects,
+};

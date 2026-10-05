@@ -9,8 +9,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Abdullah Shakur | Portfolio",
-  description: "Abdullah Shakur — AI Full Stack Engineer. Portfolio showcasing AI-driven applications, full-stack development, and scalable software solutions.",
+  title: "Abdullah Shakur | Full Stack & Automation Engineer",
+  description: "Abdullah Shakur — Full Stack & Automation Engineer. Portfolio showcasing AI-driven applications, full-stack development, n8n & Vapi automations, custom AI agents, and scalable software solutions.",
 };
 
 export default function RootLayout({
@@ -57,25 +57,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         
         {children}
-        
-        {/* Start of Waypoint Converts Navigator Config Code */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.acNavigatorConfig = {
-                  id: '57f32fb1-acc3-4c3d-80f1-f502d13bd357',
-                  host: 'https://local.waypointconverts.com:8081'
-              }
-            `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){var c=window.acNavigatorConfig;var d=document;var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src=c.host+'/navigator/launcher/js/'+c.id;(d.body||d.head).appendChild(s)})()
-            `,
-          }}
-        />
       </body>
     </html>
   );
