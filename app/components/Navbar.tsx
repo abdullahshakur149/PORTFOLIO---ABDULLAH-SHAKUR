@@ -49,6 +49,7 @@ const Navbar = () => {
               alt="logo"
               priority
               className="object-contain"
+              style={{ width: "auto", height: "auto" }}
             />
           </Link>
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
