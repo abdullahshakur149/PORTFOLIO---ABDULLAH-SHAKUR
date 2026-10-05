@@ -150,7 +150,7 @@ const Works = () => {
 				>
 					A collection of automation workflows and AI agents I build with n8n,
 					Vapi, and custom LLM frameworks. These connect tools, handle voice
-					calls, and reason over data to take real work off people's plates —
+					calls, and reason over data to take real work off people&apos;s plates —
 					from lead routing and reporting to voice booking and support triage.
 				</motion.p>
 			</div>
